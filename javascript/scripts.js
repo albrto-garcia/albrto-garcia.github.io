@@ -22,14 +22,14 @@ document
     var asunto = document.getElementById("subject").value;
     var mensaje = document.getElementById("message").value;
 
-    modal_wrapper.classList.add("active");
+    /*modal_wrapper.classList.add("active");
     if (e.classList.contains("success_btn")) {
       s_modal.classList.add("active");
       e_modal.classList.remove("active");
     } else if (e.classList.contains("error_btn")) {
       s_modal.classList.remove("active");
       e_modal.classList.add("active");
-    }
+    }*/
 
     if (nombre === "" || email === "" || asunto === "" || mensaje === "") {
       document.getElementById("popupMessage").textContent =
