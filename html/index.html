@@ -4,11 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Presentation</title>
-    <link
-      rel="stylesheet"
-      mime="text/html"
-      href="/personal_presentation/css/styles.css"
-    />
+    <link rel="stylesheet" mime="text/html" href="../css/styles.css" />
   </head>
   <body>
     <nav>
@@ -23,9 +19,10 @@
         <li><a href="#contact">Contacto</a></li>
       </ul>
     </nav>
+
     <section id="home" class="home">
       <img
-        src="/personal_presentation/images/personal_picture.jpeg"
+        src="../images/personal_picture.jpeg"
         alt="Personal Picture"
         class="personal-picture"
       />
@@ -57,55 +54,123 @@
 
     <section id="skills">
       <h2>Habilidades</h2>
-      <p>
-        Durante mi formación en la Universidad Tecnológica de Santiago (UTESA),
-        desarrollé competencias en lenguajes de programación clave como Java,
-        Python y C++. Además, inicié mi exploración de Dart y Flutter en la
-        universidad, profundizando en estas tecnologías durante mi pasantía en
-        DualSoft. Mi interés y habilidades en la seguridad informática y la
-        gestión de redes también comenzaron a tomar forma en este periodo.
-        Además de mi destreza técnica, he perfeccionado el manejo de la suite de
-        Microsoft Office, lo que ha sido esencial para optimizar procesos
-        administrativos en mis roles anteriores y actuales. Actualmente, en
-        InvestorFlow, me concentro exclusivamente en resolver incidencias del
-        sistema y proporcionar respuestas y soluciones en el menor tiempo
-        posible. Esta responsabilidad aprovecha mi habilidad para diagnosticar
-        rápidamente problemas, aplicar soluciones efectivas y asegurar que los
-        sistemas funcionen sin interrupciones, garantizando así la continuidad y
-        eficiencia operativa. Esta especialización en la resolución rápida de
-        problemas en Salesforce y otros sistemas informáticos en InvestorFlow
-        refleja mi compromiso con la excelencia operativa y el servicio al
-        cliente. Sigo comprometido con el aprendizaje continuo y la mejora de
-        mis habilidades para enfrentar los desafíos tecnológicos emergentes en
-        el sector de la ingeniería de sistemas.
-      </p>
+      <div class="skills-container">
+        <div class="skill">
+          <img src="../images/data_analysis_icon.png" alt="Data Analysis" />
+          <h3>Data Analysis</h3>
+        </div>
+        <div class="skill">
+          <img src="../images/sql_icon.png" alt="SQL" />
+          <h3>SQL</h3>
+        </div>
+        <div class="skill">
+          <img
+            src="../images/software_development_icon.png"
+            alt="Software Development"
+          />
+          <h3>Software Development</h3>
+        </div>
+        <div class="skill">
+          <img src="../images/c_icon.png" alt="C" />
+          <h3>C</h3>
+        </div>
+        <div class="skill">
+          <img src="../images/c_plus_plus_icon.png" alt="C++" />
+          <h3>C++</h3>
+        </div>
+        <div class="skill">
+          <img src="../images/c_sharp_icon.png" alt="C#" />
+          <h3>C#</h3>
+        </div>
+        <div class="skill">
+          <img src="../images/python_icon.png" alt="Python" />
+          <h3>Python</h3>
+        </div>
+        <div class="skill">
+          <img src="../images/dart_icon.png" alt="Dart" />
+          <h3>Dart</h3>
+        </div>
+        <div class="skill">
+          <img src="../images/flutter_icon.png" alt="Flutter" />
+          <h3>Flutter</h3>
+        </div>
+        <div class="skill">
+          <img src="../images/git_icon.png" alt="Git" />
+          <h3>Git</h3>
+        </div>
+        <div class="skill">
+          <img src="../images/firebase_icon.svg" alt="Firebase" />
+          <h3>Firebase</h3>
+        </div>
+        <div class="skill">
+          <img src="../images/windows_server_icon.png" alt="Windows Server" />
+          <h3>Windows Server</h3>
+        </div>
+        <div class="skill">
+          <img src="../images/linux_icon.png" alt="Linux" />
+          <h3>Linux</h3>
+        </div>
+        <div class="skill">
+          <img src="../images/salesforce_icon.svg" alt="Salesforce" />
+          <h3>Salesforce</h3>
+        </div>
+        <div class="skill">
+          <img
+            src="../images/microsoft_office_suite_icon.png"
+            alt="Microsoft Office Suite"
+          />
+          <h3>Microsoft Office Suite</h3>
+        </div>
+      </div>
     </section>
 
     <section id="contact" class="contact">
       <h2>Contacto</h2>
       <form id="contact-form" novalidate="novalidate">
-        <label for="name">Nombre:</label>
+        <label for="name">Nombre</label>
         <input type="text" id="name" name="name" required />
 
-        <label for="email">Correo Electrónico:</label>
+        <label for="email">Correo Electrónico</label>
         <input type="email" id="email" name="email" required />
 
-        <label for="subject">Asunto:</label>
+        <label for="subject">Asunto</label>
         <input type="text" id="subject" name="subject" required />
 
-        <label for="message">Mensaje:</label>
+        <label for="message">Mensaje</label>
         <textarea id="message" name="message" required></textarea>
 
-        <button type="submit">Enviar</button>
+        <button type="submit" class="submit-button">Enviar</button>
       </form>
     </section>
+
+    <div id="popup" class="popup" style="display: none">
+      <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <p id="popupMessage"></p>
+      </div>
+    </div>
+
+    
+
     <footer>
-      <p>&copy; 2024 Alberto de Jesús García Peña. Todos los derechos reservados.</p>
+      <p>
+        &copy; 2024 Alberto de Jesús García Peña. Todos los derechos reservados.
+      </p>
       <div class="footer-social-media-icons">
-        <a target=”_blank” rel="noopener noreferrer" href="https://github.com/albrto-garcia"><img src="/personal_presentation/images/github_logo.png" alt="GitHub" /></a>
-        <a target=”_blank” rel="noopener noreferrer" href="https://www.linkedin.com/in/alberto--garcia/"><img src="/personal_presentation/images/linkedin_logo.png" alt="LinkedIn" /></a>
+        <a
+          target="”_blank”"
+          rel="noopener noreferrer"
+          href="https://github.com/albrto-garcia"
+          ><img src="../images/github_logo.png" alt="GitHub"
+        /></a>
+        <a
+          target="”_blank”"
+          rel="noopener noreferrer"
+          href="https://www.linkedin.com/in/alberto--garcia/"
+          ><img src="../images/linkedin_logo.png" alt="LinkedIn"
+        /></a>
       </div>
     </footer>
-    <script src="/personal_presentation/javascript/scripts.js"></script>
+    <script src="../javascript/scripts.js"></script>
   </body>
 </html>

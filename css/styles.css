@@ -1,9 +1,20 @@
+:root {
+  --bg-clr: #00599f;
+  --white: #fff;
+  --text-clr: #706f6f;
+  --success-clr: #3cb878;
+  --success-hvr: #059249;
+  --error-clr: #fd5664;
+  --error-hvr: #ff0016;
+  --cancel-clr: #d4d9e5;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #ffffff;
 }
 
 body .p {
@@ -154,25 +165,68 @@ nav ul li a:hover {
   background-color: #0056b3;
 }
 
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1%;
+  background-color: white;
+  border-radius: 8px;
+  width: 10%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skill img {
+  width: 100px;
+  height: 100px;
+  margin: 10%;
+}
+
+.skill h3 {
+  margin: 10%;
+}
+
+.skills-container {
+  text-align: center; 
+  display: flex;
+  flex-wrap: wrap; 
+}
+
 @media (max-width: 768px) {
-  nav ul li {
-    display: block;
-    margin-right: 0;
-    margin-bottom: 5px;
+  header, section {
+    width: 90%;
+    padding: 15px;
   }
 
-  nav ul li a {
-    display: block;
-    text-align: center;
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 10px 0; 
+  }
+
+  .skill {
+    width: 48%;
+  }
+
+  .home, .contact {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .personal-picture {
+    width: 200px;
+    height: 200px;
+  }
+
+  footer {
+    flex-direction: column;
   }
 }
 
 @media (max-width: 480px) {
-  nav {
-    padding: 5px;
-  }
-
-  nav ul li a {
-    padding: 8px;
+  .skill {
+    width: 90%;
   }
 }
