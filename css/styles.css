@@ -22,17 +22,32 @@ section {
 
 footer {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  color: #ffffff;
+  padding: 20px;
   background-color: #000000;
+  color: #fff;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  border-top: 1px solid #ccc;
+}
+
+footer .footer-social-media-icons img {
+  width: 30px;
+  margin: 0 10px;
 }
 
 h1,
 h2,
 h3 {
   text-transform: uppercase;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
 }
 
 nav {
@@ -43,10 +58,25 @@ nav {
   background-color: #000000;
 }
 
+nav .left {
+  display: flex;
+  align-items: normal;
+  flex-direction: row;
+}
+
 nav .name {
   font-size: 20px;
   color: #ffffff;
   font-weight: bold;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+nav .title {
+  font-size: 15px;
+  color: #ffffff;
+  font-weight: normal;
+  display: inline-block;
 }
 
 nav ul {
@@ -68,6 +98,60 @@ nav ul li a {
 
 nav ul li a:hover {
   color: #007bff;
+}
+
+.personal-picture {
+  vertical-align: middle;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.personal-intro h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.personal-intro p {
+  margin: 10px 0 0;
+  color: #000000;
+}
+
+.contact {
+  padding: 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact label {
+  margin-top: 10px;
+}
+
+.contact input, .contact textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact button {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background-color: #0056b3;
 }
 
 @media (max-width: 768px) {

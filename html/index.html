@@ -12,7 +12,10 @@
   </head>
   <body>
     <nav>
-      <div class="name">Alberto de Jesús García Peña</div>
+      <div>
+        <div class="name">Alberto de Jesús García Peña</div>
+        <div class="title">Ingeniero en Sistemas Computacionales</div>
+      </div>
       <ul>
         <li><a href="#home">Inicio</a></li>
         <li><a href="#aboutme">Sobre Mí</a></li>
@@ -20,13 +23,20 @@
         <li><a href="#contact">Contacto</a></li>
       </ul>
     </nav>
-    <section id="home">
-      <h1>Descubre Mi Trayectoria Profesional</h1>
-      <p>
-        Explora mi viaje como Ingeniero en Sistemas Computacionales. Aquí
-        compartiré mis experiencias iniciales, aprendizajes y el crecimiento
-        continuo en el campo de la tecnología.
-      </p>
+    <section id="home" class="home">
+      <img
+        src="/personal_presentation/images/personal_picture.jpeg"
+        alt="Personal Picture"
+        class="personal-picture"
+      />
+      <div class="personal-intro">
+        <h1>Descubre Mi Trayectoria Profesional</h1>
+        <p>
+          Explora mi viaje como Ingeniero en Sistemas Computacionales. Aquí
+          compartiré mis experiencias iniciales, aprendizajes y el crecimiento
+          continuo en el campo de la tecnología.
+        </p>
+      </div>
     </section>
 
     <section id="aboutme">
@@ -71,9 +81,9 @@
       </p>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="contact">
       <h2>Contacto</h2>
-      <form id="contact_form" novalidate="novalidate">
+      <form id="contact-form" novalidate="novalidate">
         <label for="name">Nombre:</label>
         <input type="text" id="name" name="name" required />
 
@@ -90,7 +100,11 @@
       </form>
     </section>
     <footer>
-      <p>Contacto: albertogarciap18@gmail.com</p>
+      <p>&copy; 2024 Alberto de Jesús García Peña. Todos los derechos reservados.</p>
+      <div class="footer-social-media-icons">
+        <a target=”_blank” rel="noopener noreferrer" href="https://github.com/albrto-garcia"><img src="/personal_presentation/images/github_logo.png" alt="GitHub" /></a>
+        <a target=”_blank” rel="noopener noreferrer" href="https://www.linkedin.com/in/alberto--garcia/"><img src="/personal_presentation/images/linkedin_logo.png" alt="LinkedIn" /></a>
+      </div>
     </footer>
     <script src="/personal_presentation/javascript/scripts.js"></script>
   </body>
