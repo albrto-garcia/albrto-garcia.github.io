@@ -11,25 +11,30 @@
     />
   </head>
   <body>
-    
-    <nav class="nav">
-      <h1 class="nav-title">Alberto de Jesús García Peña</h1>
-      <div class="nav-items" id="nav-items">
-        <a href="#home" class="smooth">Inicio</a>
-        <a href="#aboutme" class="smooth">Sobre mí</a>
-        <a href="#skills" class="smooth">Habilidades</a>
-        <a href="#contact" class="smooth">Contacto</a>
-        <a href="javascript:void(0);" class="icon" onclick="navDropdown()">
-          <i class="fa fa-bars" id="nav-dropdown"></i>
-        </a>
-      </div>
-      <div class="dropdown">
-        <li><a href="#home" class="smooth">Inicio</a></li>
-        <li><a href="#aboutme" class="smooth">Sobre Mí</a></li>
-        <li><a href="#skills" class="smooth">Habilidades</a></li>
-        <li><a href="#contact" class="smooth">Contacto</a></li>
-      </div>
-    </nav>
+    <header class="header">
+      <nav class="navbar">
+        <a href="#home" class="nav-logo">Alberto de Jesús García Peña</a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#home" class="nav-link">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#aboutme" class="nav-link">Sobre mí</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link">Habilidades</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contacto</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
 
     <section id="home" class="home">
       <img
@@ -50,16 +55,16 @@
     <section id="aboutme">
       <h2>Sobre Mí</h2>
       <p>
-        Soy Alberto de Jesús García Peña, ingeniero en Sistemas Computacionales de 23 años, de
-        Moca, provincia Espaillat en la República Dominicana. Graduado de la
-        Universidad Tecnológica de Santiago (UTESA). Actualmente laboro en
-        InvestorFlow, donde ofrezco soporte especializado a clientes que
-        utilizan Salesforce. Mi certificación en administración de Salesforce me
-        ha permitido desarrollar soluciones personalizadas y efectivas,
-        mejorando significativamente la operatividad y la satisfacción del
-        cliente. Mi paso por García & Peña Consulting Group también ha
-        enriquecido mi capacidad para enfrentar y resolver desafíos técnicos
-        complejos, asegurando el éxito en nuestros proyectos.
+        Soy Alberto de Jesús García Peña, ingeniero en Sistemas Computacionales
+        de 23 años, de Moca, provincia Espaillat en la República Dominicana.
+        Graduado de la Universidad Tecnológica de Santiago (UTESA). Actualmente
+        laboro en InvestorFlow, donde ofrezco soporte especializado a clientes
+        que utilizan Salesforce. Mi certificación en administración de
+        Salesforce me ha permitido desarrollar soluciones personalizadas y
+        efectivas, mejorando significativamente la operatividad y la
+        satisfacción del cliente. Mi paso por García & Peña Consulting Group
+        también ha enriquecido mi capacidad para enfrentar y resolver desafíos
+        técnicos complejos, asegurando el éxito en nuestros proyectos.
       </p>
     </section>
 
@@ -186,7 +191,7 @@
         /></a>
       </div>
     </footer>
-    
+
     <script src="../javascript/scripts.js"></script>
   </body>
 </html>

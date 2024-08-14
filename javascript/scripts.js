@@ -1,3 +1,7 @@
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+const navLink = document.querySelectorAll(".nav-link");
+
 document
   .getElementById("contact-form")
   .addEventListener("submit", function (e) {
@@ -32,15 +36,7 @@ function closePopup() {
   document.getElementById("popup").style.display = "none";
 }
 
-function navDropdown() {
-  document.querySelector(".dropdown").classList.toggle("open");
-  const isOpen = document.querySelector(".dropdown").classList.contains("open");
-  document.getElementById("nav-dropdown").classList = isOpen
-    ? "fa-solid fa-bars"
-    : "fa fa-bars";
-}
-
-document.querySelectorAll(".smooth").forEach((anchor) => {
+document.querySelectorAll(".nav-link").forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
 
@@ -54,3 +50,17 @@ document.querySelectorAll(".smooth").forEach((anchor) => {
     navDropdown();
   });
 });
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+}
+
+navLink.forEach((n) => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+  hamburger.classList.remove("active");
+  navMenu.classList.remove("active");
+}
