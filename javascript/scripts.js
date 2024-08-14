@@ -1,17 +1,3 @@
-document.querySelectorAll("nav ul li a").forEach((anchor) => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
-
-    const targetId = this.getAttribute("href").substring(1);
-    const targetElement = document.getElementById(targetId);
-
-    window.scrollTo({
-      top: targetElement.offsetTop - 50,
-      behavior: "smooth",
-    });
-  });
-});
-
 document
   .getElementById("contact-form")
   .addEventListener("submit", function (e) {
@@ -46,11 +32,25 @@ function closePopup() {
   document.getElementById("popup").style.display = "none";
 }
 
-function navResponsive() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
+function navDropdown() {
+  document.querySelector(".dropdown").classList.toggle("open");
+  const isOpen = document.querySelector(".dropdown").classList.contains("open");
+  document.getElementById("nav-dropdown").classList = isOpen
+    ? "fa-solid fa-bars"
+    : "fa fa-bars";
 }
+
+document.querySelectorAll(".smooth").forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    const targetId = this.getAttribute("href");
+    const targetElement = document.querySelector(targetId);
+
+    window.scrollTo({
+      top: targetElement.offsetTop + -55,
+      behavior: "smooth",
+    });
+    navDropdown();
+  });
+});
